@@ -55,15 +55,15 @@ function createMarkupCountriInfo(arr) {
       <h2 class="title-js">Name: ${name.official}</h2>
     <img src="${flags.svg}" alt="${flags.alt}" width="70" heigth="50">
     <p>
-     <span class="style">Capital:
+     <span class="style-js">Capital:
      </span> ${capital}
     </p>
     <p>
-     <span class="style">Population:
+     <span class="style-js">Population:
      </span> ${population}
     </p>
     <p>
-     <span class="style">Languages:
+     <span class="style-js">Languages:
      </span> ${Object.values(languages).join('', '')}
      </p>
     </li>`;
