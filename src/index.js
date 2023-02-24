@@ -48,10 +48,10 @@ function onFetchError() {
 
 
 function createMarkupCountriInfo(arr) {
-  const markup = arr
-    .map(({ name, flags, capital, population, languages }) => {
+    const markup = arr
+        .map(({ name, flags, capital, population, languages }) => {
       
-      return `<li class="list-js">
+            return `<li class="list-js">
       <h2 class="title-js">Name: ${name.official}</h2>
     <img src="${flags.svg}" alt="${flags.alt}" width="70" heigth="50">
     <p>
@@ -67,7 +67,7 @@ function createMarkupCountriInfo(arr) {
      </span> ${Object.values(languages).join('', '')}
      </p>
     </li>`;
-    }).join('');
+        }).join('');
 
   countryInfo.innerHTML = markup;
 }
