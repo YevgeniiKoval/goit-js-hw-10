@@ -64,7 +64,7 @@ function createMarkupCountriInfo(arr) {
     </p>
     <p>
      <span class="style-js">Languages:
-     </span> ${Object.values(languages).join('', '')}
+     </span> ${Object.values(languages).join(" ")}
      </p>
     </li>`;
         }).join('');
